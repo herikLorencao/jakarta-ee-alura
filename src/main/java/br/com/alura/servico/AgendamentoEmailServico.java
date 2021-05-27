@@ -8,9 +8,10 @@ import javax.inject.Inject;
 
 @Stateless
 public class AgendamentoEmailServico {
+
     @Inject
     private AgendamentoEmailDAO dao;
-    
+
     public List<AgendamentoEmail> listar() {
         return this.dao.listar();
     }
