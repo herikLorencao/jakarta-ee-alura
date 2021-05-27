@@ -15,4 +15,9 @@ public class AgendamentoEmailServico {
     public List<AgendamentoEmail> listar() {
         return this.dao.listar();
     }
+    
+    public void inserir(AgendamentoEmail agendamentoEmail) {
+        agendamentoEmail.setAgendado(Boolean.FALSE);
+        this.dao.inserir(agendamentoEmail);
+    }
 }
