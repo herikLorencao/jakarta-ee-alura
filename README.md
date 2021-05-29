@@ -13,8 +13,14 @@
 
 ```bash 
 module add --name=com.mysql --resources="/home/herik/Downloads/mysql-connector-java-8.0.20.jar" --dependencies=javax.api,javax.transaction.api
+```
 
+```bash 
 /subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql,driver-xa-datasource-class-name=com.mysql.cj.jdbc.MysqlXADataSource)
 ```
 
+## Adicionando Fila com JMS
 
+```bash
+jms-queue add --queue-address=EmailQueue --entries=java:/jms/queue/EmailQueue
+```
