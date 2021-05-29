@@ -2,4 +2,5 @@ br/com/alura/servico/AgendamentoEmailServico.class
 br/com/alura/AgendamentoEmailApplication.class
 br/com/alura/entidade/AgendamentoEmail.class
 br/com/alura/controller/AgendamentoEmailController.class
+br/com/alura/job/AgendamentoEmailJob.class
 br/com/alura/dao/AgendamentoEmailDAO.class

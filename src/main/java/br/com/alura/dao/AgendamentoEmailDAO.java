@@ -8,15 +8,27 @@ import javax.persistence.PersistenceContext;
 
 @Stateless
 public class AgendamentoEmailDAO {
+
     @PersistenceContext
     private EntityManager entityManager;
-    
+
     public List<AgendamentoEmail> listar() {
         return entityManager.createQuery("SELECT ae FROM AgendamentoEmail ae",
                 AgendamentoEmail.class).getResultList();
     }
-    
+
     public void inserir(AgendamentoEmail agendamentoEmail) {
         entityManager.persist(agendamentoEmail);
+    }
+
+    public List<AgendamentoEmail> listarEmailsNaoAgendados() {
+        return entityManager.createQuery(
+                "SELECT ae FROM AgendamentoEmail ae WHERE ae.agendado = FALSE",
+                AgendamentoEmail.class
+        ).getResultList();
+    }
+
+    public void atualizar(AgendamentoEmail agendamentoEmail) {
+        entityManager.merge(agendamentoEmail);
     }
 }
