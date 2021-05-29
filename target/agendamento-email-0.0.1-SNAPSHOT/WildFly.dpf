@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
-<jboss-web xmlns="http://www.jboss.com/xml/ns/javaee">
-  <context-root>agendamento</context-root>
-</jboss-web>

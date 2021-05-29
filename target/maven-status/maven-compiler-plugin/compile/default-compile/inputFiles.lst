@@ -1,4 +1,5 @@
 /home/herik/codigos/jakartaee-base/src/main/java/br/com/alura/entidade/AgendamentoEmail.java
+/home/herik/codigos/jakartaee-base/src/main/java/br/com/alura/mdb/AgendamentoEmailMDB.java
 /home/herik/codigos/jakartaee-base/src/main/java/br/com/alura/controller/AgendamentoEmailController.java
 /home/herik/codigos/jakartaee-base/src/main/java/br/com/alura/AgendamentoEmailApplication.java
 /home/herik/codigos/jakartaee-base/src/main/java/br/com/alura/dao/AgendamentoEmailDAO.java
