@@ -24,3 +24,12 @@ module add --name=com.mysql --resources="/home/herik/Downloads/mysql-connector-j
 ```bash
 jms-queue add --queue-address=EmailQueue --entries=java:/jms/queue/EmailQueue
 ```
+
+
+## Observação Importante (Problema de Timezone no Banco)
+
+Rodar o comando abaixo para corrigir:
+
+```
+SET @@global.time_zone = '+3:00';
+```
